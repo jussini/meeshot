@@ -1,10 +1,25 @@
 import QtQuick 1.1
 import com.nokia.meego 1.0
-
+import QtMultimediaKit 1.1
 
 Page {
+    id: mainPage
     tools: tabBarTools
-    orientationLock: PageOrientation.LockPortrait
+
+    Image {
+        id: infoImage
+        anchors.top: parent.top
+        anchors.left: parent.left
+        anchors.margins: 10
+        source: "images/1320925829_info.png"
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: about.open()
+        }
+    }
+
+    AboutDialog { id: about}
 
     TabGroup {
         id: tabs
@@ -13,38 +28,41 @@ Page {
 
         RimshotPage {
             id: page1
-            bgcolor: "white"
-            audio: "sounds/37215__simon-lacelle__ba-da-dum.wav"
+            sound: "sounds/ba-da-dum.mp3"
+            audio: audioPlayer
+
         }
         RimshotPage {
             id: page2
-            bgcolor: "white"
-            audio: "sounds/117479__mjwilson__michael-j-wilson-laugh.wav"
+            sound: "sounds/laugh.mp3"
+            audio: audioPlayer
         }
         RimshotPage {
             id: page3
-            bgcolor: "white"
-            audio: "sounds/73750__timbre__benboncan-sad-trombone-more-wah-bright-de-clicked.wav"
+            sound: "sounds/wah-wah.mp3"
+            audio: audioPlayer
         }
         RimshotPage {
             id: page4
-            bgcolor: "white"
-            audio: "sounds/44877__simondsouza__boom-boom.wav"
+            sound: "sounds/boom-boom.mp3"
+            audio: audioPlayer
         }
     }
-
 
     ToolBarLayout {
         id: tabBarTools
         visible: true
         ButtonRow {
             platformStyle: TabButtonStyle { }
-            TabButton { tab: page1; text: "ba-da-dum" }
+            TabButton { tab: page1; text: "rimshot" }
             TabButton { tab: page2; text: "laugh" }
-            TabButton { tab: page3; text: "trombone" }
+            TabButton { tab: page3; text: "wah wah" }
             TabButton { tab: page4; text: "two bits" }
         }
+    }
 
+    Audio {
+        id: audioPlayer
     }
 
 

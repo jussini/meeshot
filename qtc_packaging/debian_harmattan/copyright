@@ -1,17 +1,14 @@
-This package was debianized by Jussi Niskanen <jussini@unknown> on
+This package was debianized by Jussi Niskanen <jussini@gmail.com> on
 Wed, 09 Nov 2011 11:58:47 +0200.
-
-It was downloaded from <url://example.com>
 
 Upstream Author(s):
 
-    <put author's name and email here>
-    <likewise for another author>
+    Jussi Niskanen <jussini@gmail.com>
 
 Copyright:
 
-    <Copyright (C) YYYY Name OfAuthor>
-    <likewise for another author>
+    <Copyright (C) 2011 Jussi Niskanen>
+
 
 License:
 
@@ -32,8 +29,17 @@ License:
 On Debian systems, the complete text of the GNU General
 Public License can be found in `/usr/share/common-licenses/GPL'.
 
-The Debian packaging is (C) 2011, Jussi Niskanen <jussini@unknown> and
+The Debian packaging is (C) 2011, Jussi Niskanen <jussini@gmail.com> and
 is licensed under the GPL, see above.
+
+
+Uses sounds and graphics released under various Creative Commons licenses:
+- http://www.freesound.org/people/simondsouza/sounds/44877/
+- http://www.freesound.org/people/Timbre/sounds/73750/
+- http://www.freesound.org/people/Simon_Lacelle/sounds/37215/
+- http://www.freesound.org/people/mjwilson/sounds/117479/
+- http://www.clker.com/clipart-smaller-red-button.html
+- http://www.mricons.com/icon/116797/128/info-icon
 
 
 # Please also look if there are files or directories which have a
