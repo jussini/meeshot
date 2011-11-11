@@ -10,8 +10,10 @@ Page {
         id: infoImage
         anchors.top: parent.top
         anchors.left: parent.left
-        anchors.margins: 10
-        source: "images/1320925829_info.png"
+        anchors.margins: 15
+        width: 45
+        height: 45
+        source: "images/icontexto-message-types-question-red_256x256.png"
 
         MouseArea {
             anchors.fill: parent
