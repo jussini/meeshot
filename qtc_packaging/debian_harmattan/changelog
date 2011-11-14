@@ -1,3 +1,9 @@
+meeshot (1.46.0) unstable; urgency=low
+
+  * First release to store.
+
+ -- Jussi Niskanen <jussini@gmail.com>  Mon, 14 Nov 2011 07:12:00 +0200
+
 meeshot (1.45.1) unstable; urgency=low
 
   * Release candidate to ovi store.

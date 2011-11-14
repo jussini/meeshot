@@ -23,14 +23,18 @@ Dialog {
             Label {text: "Press the button for sound effects."}
             Label {text: "Change the effect from the bottom row."}
             Label {text: " "}
-            Label {text: "Version 1.45.1"}
+            Label {text: "Version 1.46.0"}
             Label {text: "Released under GPL v3 license"}
-            Label {text: "by Jussi Niskanen 2011"}
+            Label {text: "Jussi Niskanen 2011"}
             Label {text: "jussini@gmail.com"}
         }
 
     }
 
-    buttons: Button {text: "OK"; onClicked: myDialog.accept()}
+    buttons: Button {
+        text: "OK";
+        onClicked: myDialog.accept();
+        anchors.horizontalCenter: parent.horizontalCenter
+    }
 
 }
