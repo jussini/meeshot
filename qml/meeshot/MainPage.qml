@@ -1,25 +1,11 @@
 import QtQuick 1.1
 import com.nokia.meego 1.0
-import QtMultimediaKit 1.1
+//import QtMultimediaKit 1.1
 
 Page {
     id: mainPage
     tools: tabBarTools
 
-    Image {
-        id: infoImage
-        anchors.top: parent.top
-        anchors.left: parent.left
-        anchors.margins: 15
-        width: 45
-        height: 45
-        source: "images/icontexto-message-types-question-red_256x256.png"
-
-        MouseArea {
-            anchors.fill: parent
-            onClicked: about.open()
-        }
-    }
 
     AboutDialog { id: about}
 
@@ -63,9 +49,37 @@ Page {
         }
     }
 
-    Audio {
-        id: audioPlayer
+    ToolIcon {
+        iconId: "toolbar-view-menu";
+        onClicked: (mainMenu.status == DialogStatus.Closed) ?
+                       mainMenu.open() : mainMenu.close()
+        anchors.top: parent.top
+        anchors.right: parent.right
     }
+
+    // define the menu
+         Menu {
+             id: mainMenu
+             // define the items in the menu and corresponding actions
+             content: MenuLayout {
+                 MenuItem {
+                     text: "Settings"
+                     onClicked: settingsSheet.open()
+                 }
+                 MenuItem {
+                     text: "About"
+                     onClicked: about.open()
+                 }
+                 MenuItem {
+                     text: "Quit"
+                     onClicked: Qt.quit()
+                 }
+             }
+         }
+
+    //Audio {
+    //    id: audioPlayer
+    //}
 
 
 }

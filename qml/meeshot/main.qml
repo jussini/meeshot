@@ -11,4 +11,13 @@ PageStackWindow {
         id: mainPage
     }
 
+    SettingsSheet {
+        id: settingsSheet
+    }
+
+    Connections {
+        target: Qt.application
+        onActiveChanged: console.log("active changed", Qt.application.active)
+    }
+
 }
