@@ -30,6 +30,14 @@ Sheet {
 
             }
 
+            Row {
+                anchors.left: parent.left
+                anchors.right: parent.right
+                spacing: width - swithcLabel.width - switchControl.width
+                Label {id: swithcLabel; text: "Play on start"}
+                Switch { id: switchControl; checked: false}
+            }
+
 
     }
 
