@@ -26,7 +26,7 @@ Dialog {
             Label {text: "Version 1.47.0"}
             Label {text: "Released under GPL v3 license"}
             Label {text: "Jussi Niskanen 2011"}
-            Label {text: "jussini@gmail.com"}
+            Label {text: "http://ankkatalo.net/meeshot"}
         }
 
     }
