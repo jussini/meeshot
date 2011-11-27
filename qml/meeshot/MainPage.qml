@@ -6,6 +6,8 @@ Page {
     id: mainPage
     tools: tabBarTools
 
+    property variant indexToPageMap: {"1":page1, "2":page2, "3":page3, "4":page4}
+    property alias currentTab: tabs.currentTab
 
     AboutDialog { id: about}
 
@@ -14,24 +16,30 @@ Page {
 
         currentTab: page1
 
+        onCurrentTabChanged: latestTab = currentTab.index
+
         RimshotPage {
             id: page1
+            index:1
             sound: "sounds/ba-da-dum.mp3"
             audio: audioPlayer
 
         }
         RimshotPage {
             id: page2
+            index: 2
             sound: "sounds/laugh.mp3"
             audio: audioPlayer
         }
         RimshotPage {
             id: page3
+            index: 3
             sound: "sounds/wah-wah.mp3"
             audio: audioPlayer
         }
         RimshotPage {
             id: page4
+            index: 4
             sound: "sounds/boom-boom.mp3"
             audio: audioPlayer
         }

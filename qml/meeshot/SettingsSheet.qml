@@ -11,7 +11,7 @@ Sheet {
         Column {
             id: col
             anchors.fill: parent
-            anchors.margins: UIConstants.DefaultMargin
+            //anchors.margins: UIConstants.DefaultMargin
 
 
             Label {

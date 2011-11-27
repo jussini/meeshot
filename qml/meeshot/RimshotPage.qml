@@ -7,6 +7,7 @@ Page {
     property color bgcolor: "transparent"
     property string sound: ""
     property QtObject audio
+    property int index: -1
 
     Rectangle {
         anchors.fill: parent
