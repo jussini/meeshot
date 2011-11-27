@@ -72,7 +72,10 @@ Page {
              content: MenuLayout {
                  MenuItem {
                      text: "Settings"
-                     onClicked: settingsSheet.open()
+                     onClicked: {
+                         settingsSheet.checked = playOnStart
+                         settingsSheet.open()
+                     }
                  }
                  MenuItem {
                      text: "About"

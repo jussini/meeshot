@@ -4,6 +4,8 @@ import com.nokia.meego 1.0
 Sheet {
     id: settingsSheet
 
+    property alias checked: switchControl.checked
+
     acceptButtonText: "Ok"
     rejectButtonText: "Cancel"
 

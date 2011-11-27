@@ -12,6 +12,8 @@ PageStackWindow {
     property int latestTab: 0 // by default select the first tab
 
     onLatestTabChanged: mainPage.currentTab = mainPage.indexToPageMap[""+latestTab]
+    onPlayOnStartChanged:  console.log("playonstart changed")
+
 
     function loadSettings() {
         var db = openDatabaseSync("InstantMeeshotSettingsDB", "1.0", "Persistence storage for Instant Meeshot", 1000000);
@@ -60,6 +62,9 @@ PageStackWindow {
 
     SettingsSheet {
         id: settingsSheet
+        checked: playOnStart
+        onAccepted: playOnStart = checked
+
     }
 
     Connections {
