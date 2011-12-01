@@ -23,7 +23,7 @@ Dialog {
             Label {text: "Press the button for sound effects."}
             Label {text: "Change the effect from the bottom row."}
             Label {text: " "}
-            Label {text: "Version 1.47.0"}
+            Label {text: "Version 1.48.0"}
             Label {text: "Released under GPL v3 license"}
             Label {text: "Jussi Niskanen 2011"}
             Label {text: "http://ankkatalo.net/meeshot"}

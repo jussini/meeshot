@@ -1,3 +1,11 @@
+meeshot (1.48.0) unstable; urgency=low
+
+  * Remember the last used tab
+  * Add settings sheet
+  * Add possibility to play sound on start
+
+ -- Jussi Niskanen <jussini@gmail.com>  Thu, 1 Dec 2011 13:35:00 +0200
+
 meeshot (1.47.0) unstable; urgency=low
 
   * Fix packaging error that increased file size.

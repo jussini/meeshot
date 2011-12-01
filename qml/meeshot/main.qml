@@ -73,6 +73,10 @@ PageStackWindow {
             console.log("active changed", Qt.application.active)
             if (Qt.application.active == true) {
                 loadSettings()
+                if (playOnStart == true) {
+                    mainPage.currentTab.play()
+                }
+
             } else {
                 saveSettings()
             }

@@ -9,6 +9,15 @@ Page {
     property QtObject audio
     property int index: -1
 
+    function play() {
+        if (audio.playing) {
+            audio.stop()
+        }
+        audio.source = ""
+        audio.source = tabPage.sound
+        audio.play()
+    }
+
     Rectangle {
         anchors.fill: parent
         color: bgcolor
@@ -24,12 +33,7 @@ Page {
             anchors.fill: parent
 
             onClicked: {
-                if (audio.playing) {
-                    audio.stop()
-                }
-                audio.source = ""
-                audio.source = tabPage.sound
-                audio.play()
+                tabPage.play()
             }
 
         }
